@@ -1,7 +1,7 @@
 import React from 'react';
 import logo from '../assets/smit-logo.png';
 import {Layout, Menu, theme } from 'antd';
-import { useNavigate, Link} from 'react-router';
+import { useNavigate} from 'react-router';
 
 const { Header, Content, Footer } = Layout;
 const items =  [{
@@ -68,25 +68,6 @@ const navigate = useNavigate();
             fontStyle: 'italic'
           }}
         />
-      
-        {/* <div 
-         style={{
-          flex: 1,
-          minWidth: 0,
-          display: 'flex',
-          justifyContent: 'center',
-          gap : 24,
-          alignItems: 'center',
-          fontSize: '30px',
-          fontStyle: 'italic',
-          cursor: 'pointer',
-        }}>
-       <Link to={'/home'} style={{color: 'white',textDecoration:'none'}}><div>Home</div></Link>
-       <Link to={'/about'}style={{color: 'white',textDecoration:'none'}}><div>About</div></Link>
-       <Link to={'/services'}style={{color: 'white',textDecoration:'none'}}><div>Services</div></Link>
-       <Link to={'/contact'}style={{color: 'white',textDecoration:'none'}}><div>Contact</div></Link>
-        </div> */}
-        
       </Header>
       <Content
         style={{
@@ -96,7 +77,6 @@ const navigate = useNavigate();
           textAlign: 'center',
           fontStyle:'italic',
           fontWeight: 'bolder',
-          textAlign: 'center'
         }}
       >
         <div

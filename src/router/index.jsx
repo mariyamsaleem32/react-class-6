@@ -1,5 +1,5 @@
 import { React, useState } from 'react';
-import { BrowserRouter, Routes, Route, Navigate } from 'react-router';
+import {Routes, Route, Navigate } from 'react-router';
 import AppLayout from '../components/Layout';
 import Home from '../pages/Home';
 import About from '../pages/About';
@@ -13,7 +13,6 @@ const CustomNavbar = () => {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
 
   return (
-    <BrowserRouter>
       <Routes>
         {/* Redirect to Home if logged in, else go to Login */}
         <Route
@@ -48,7 +47,7 @@ const CustomNavbar = () => {
         {/* 404 page route */}
         <Route path="*" element={<AppNoteFound />}/>
       </Routes>
-    </BrowserRouter>
+
   );
 };
 
