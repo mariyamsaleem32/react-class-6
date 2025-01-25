@@ -1,9 +1,8 @@
 import React from 'react';
-import logo from '../assets/smit-logo.png';
 import {Layout, Menu, theme } from 'antd';
 import { useNavigate} from 'react-router';
 
-const { Header, Content, Footer } = Layout;
+const { Header, Content } = Layout;
 const items =  [{
 key: "/home",
 label: "Home",
@@ -40,13 +39,7 @@ const navigate = useNavigate();
           justifyContent: 'center'
         }}
       >
-        <div className="demo-logo" />
-        <img src={logo} alt="smit-logo" style={
-            {
-        width:'130px',
-        height:'130px',
-        marginTop: '11px'
-            }}/>
+
         <Menu
           theme="dark"
           mode="horizontal"
@@ -90,13 +83,6 @@ const navigate = useNavigate();
           {children}
         </div>
       </Content>
-      <Footer
-        style={{
-          textAlign: 'center',
-        }}
-      >
-      react App ©{new Date().getFullYear()} Created by Mariyam Saleem
-      </Footer>
     </Layout>
   );
 };

@@ -1,10 +1,11 @@
 import React from 'react';
-import CustomNavbar from '../router/index';
+import Main from "./main"
+// import CustomNavbar from '../router/index';
 
 function Dashboard() {
   return (
     <div>
-      <CustomNavbar />
+      <Main/>
     </div>
   );
 }
