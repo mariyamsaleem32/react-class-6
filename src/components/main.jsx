@@ -7,7 +7,7 @@ import { Row, Col} from 'antd';
 const Main = () => {
     return (
         <>
-        <Row>
+        <Row style={{marginTop : '25px'}}>
         <Col span={8}>
             <img src={Logo} alt="" />
         </Col>
